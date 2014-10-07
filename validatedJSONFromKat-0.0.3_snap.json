@@ -1,0 +1,164 @@
+{
+  "entity":{
+    "name":"This Company",
+    "operatingEnvironment":{
+      "factors":[
+        {
+          "id":837456784356,
+          "rating":15,
+          "label":"Rating range High"
+        },
+        {
+          "id":837456784356,
+          "rating":6,
+          "label":"Rating Range Low "
+        },
+        {
+          "id":837456784356,
+          "influence":1,
+          "label":"Influence"
+        }
+      ],
+      "subFactors":[
+        {
+          "id":837456784356,
+          "rating":13,
+          "selected":1,
+          "label":"Economic Environment",
+          "options":[
+            {
+              "id":837456784356,
+              "value":3,
+              "label":"Description A",
+              "isSelected":true
+            },
+            {
+              "id":837456784356,
+              "value":1,
+              "label":"Description B",
+              "isSelected":false
+            }
+          ]
+        },
+        {
+          "id":837456784356,
+          "rating":10,
+          "selected":5,
+          "label":"Something Else",
+          "options":[
+            {
+              "id":837456784356,
+              "value":5,
+              "label":"Description",
+              "isSelected":true
+            },
+            {
+              "id":837456784356,
+              "value":3,
+              "label":"Description available",
+              "isSelected":false
+            }
+          ]
+        }
+      ]
+    },
+    "businessProfile":{
+      "factors":[
+        {
+          "id":837456784356,
+          "midPoint":15,
+          "label":"Rating range High"
+        },
+        {
+          "id":837456784356,
+          "influence":2,
+          "label":"Influence"
+        }
+      ],
+      "subFactors":[
+        {
+          "id":837456784356,
+          "rating":17,
+          "selected":3,
+          "label":"Management Strategy",
+          "options":[
+            {
+              "id":837456784356,
+              "value":3,
+              "label":"Description A",
+              "isSelected":true
+            },
+            {
+              "id":837456784356,
+              "value":1,
+              "label":"Description B",
+              "isSelected":false
+            }
+          ]
+        },
+        {
+          "id":837456784356,
+          "rating":20,
+          "selected":3,
+          "label":"Corporate Governance",
+          "options":[
+            {
+              "id":837456784356,
+              "value":5,
+              "label":"Description",
+              "isSelected":true
+            },
+            {
+              "id":837456784356,
+              "value":3,
+              "label":"Description available",
+              "isSelected":false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "peers":[
+    {
+      "name":"Some other company",
+      "operatingEnvironment":{
+        "id":837456784356,
+        "rating":16,
+        "influence":3
+      },
+      "businessProfile":{
+        "id":837456784356,
+        "rating":12,
+        "influence":3
+      }
+    },
+    {
+      "name":"Yet another company",
+      "operatingEnvironment":{
+        "id":837456784356,
+        "rating":14,
+        "influence":2
+      },
+      "businessProfile":{
+        "id":837456784356,
+        "rating":11,
+        "influence":1
+      }
+    }
+  ],
+  "finalRatings":[
+    {
+      "name":"Current Rating",
+      "rating":"AA"
+    },
+    {
+      "name":"Country Ceiling",
+      "rating":"A+"
+    },
+    {
+      "name":"Factor Summary Observation (FSO)",
+      "rating":"0"
+    }
+  ]
+}
