@@ -1,0 +1,52 @@
+Website: http://nycvmdevapps01.fitch.corp:88/Help/Api/POST-api-Search
+
+POST - http://nycvmdevapps01.fitch.corp:88/api/Search
+
+User-Agent: Fiddler
+Host: nycvmdevapps01.fitch.corp:88
+Content-Length: 861
+userName: lfuller
+Content-Type: application/json
+
+
+
+{
+	"MaxDocumentsToRetrieve": 5,
+	"Request": {
+		"LogicalExpression": {
+			"LogicalOperator": "AND",
+			"LogicalRelationalExpressions": [
+				{
+					"LogicalOperator": "OR",
+					"RelationalExpression": [
+						{
+							"Key": "RNI_Banks|MetaData|EntityInfo|IssuerID",
+							"RelationalOperator": "EQ",
+							"Value": 94171890
+						}, {
+							"Key": "RNI_Banks|MetaData|EntityInfo|IssuerID",
+							"RelationalOperator": "EQ",
+							"Value": 3
+						}
+					]
+				}, {
+					"LogicalOperator": "AND",
+					"RelationalExpression": [
+						{
+							"Key": "RNI_Banks|MetaData|VersionID|Tool",
+							"RelationalOperator": "EQ",
+							"Value": "RN"
+						}, {
+							"Key": "RNI_Banks|MetaData|Workflow|Approved|ApproverName",
+							"RelationalOperator": "EQ",
+							"Value": "wknight"
+						}
+					]
+				}
+			]
+		}
+	},
+	"ProjectionFields": [
+		"RNI_Banks|MetaData|EntityInfo|IssuerName", "RNI_Banks|MetaData|EntityInfo|Region", "RNI_Banks|MetaData|Workflow|ThisRatingAction|RatingActionDate", "RNI_Banks|MetaData|Workflow|Published|External_Report_ID", "RNI_Banks|MetaData|Workflow|Published|PublishDate", "RNI_Banks|MetaData|EntityInfo|AgentID", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Rating|Value", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[OpEnv]|Rating|Value", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[OpEnv]|SubFactors[EconEnv]|Rating|Value", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[OpEnv]|SubFactors[FinMkts]|Rating|Value", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[OpEnv]|SubFactors[RegFrame]|Rating|Value", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[CmpnyProfile]|Rating|Value", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[CmpnyProfile]|SubFactors[Franchise]|Rating|Value", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[CmpnyProfile]|SubFactors[BisModel]|Rating|Value", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[OpEnv]|Rating|Alert|Type", "RNI_Banks|ThisEntity|ThisRatingAction[VR]|Factors[OpEnv]|Rating|Alert|Value"
+	]
+}
